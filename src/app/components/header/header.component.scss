@@ -1,0 +1,33 @@
+.app-header {
+    background-color: #F6F2F2;
+    border-bottom: black;
+}
+
+.title-header {
+    display: flex;
+    align-items: center;
+    margin-left: 19px !important;
+}
+
+.title-header .title-header-icon {
+    padding: 10px !important;
+    border: 1px solid #c2c2c2 !important;
+    border-radius: 5px;
+    background-color: #fffcfc;
+    margin-right: 10px !important;
+}
+
+.add-workspace-btn {
+    margin-right: 19px !important;
+    background-color: rgb(35, 92, 199) !important;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+hr {
+    margin: 19px !important;
+    border: 1px solid rgba(156, 156, 156, 0.156);
+}

@@ -1,0 +1,8 @@
+<p-breadcrumb class="max-w-full" [model]="items">
+    <ng-template #item let-item>
+        <a class="cursor-pointer" [routerLink]="item.url">
+            <span>{{ item.label }}</span>
+        </a>
+    </ng-template>
+    <ng-template #separator><strong> / </strong></ng-template>
+</p-breadcrumb>
