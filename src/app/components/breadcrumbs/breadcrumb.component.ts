@@ -8,7 +8,6 @@ import { Breadcrumb } from 'primeng/breadcrumb';
     templateUrl: './breadcrumb.component.html',
     standalone: true,
     imports: [Breadcrumb, RouterModule],
-    styleUrl: './breadcrumb.component.scss'
 })
 export class AppBreadcrumb implements OnInit {
     items: MenuItem[] | undefined;

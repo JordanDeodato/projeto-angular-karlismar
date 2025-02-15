@@ -12,7 +12,6 @@ import { ButtonModule } from 'primeng/button';
     selector: 'app-navbar',
     imports: [Menubar, BadgeModule, AvatarModule, InputTextModule, Ripple, CommonModule, AppIconfield, ButtonModule],
     templateUrl: './navbar.component.html',
-    styleUrl: './navbar.component.scss'
 })
 
 export class AppNavbar {

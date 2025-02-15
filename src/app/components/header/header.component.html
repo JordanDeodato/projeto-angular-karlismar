@@ -1,11 +1,11 @@
-<div class="app-header">
+<div class="app-header" *ngFor="let header of headers">
     <app-breadcrumb></app-breadcrumb>
     <div class="header-section">
         <div class="title-header">
             <div class="title-header-icon">
                 <i class="pi pi-credit-card"></i>
             </div>
-            <h2>Workspace</h2>
+            <h2>{{ header.title }}</h2>
         </div>
         <div>
             <p-button icon="pi pi-credit-card" class="mr-2 add-workspace-btn" label="Adicionar Workspace"/>

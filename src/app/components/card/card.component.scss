@@ -1,0 +1,41 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.p-card-content {
+    display: flex;
+}
+
+.workspace-icon {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a4b2dc2a;
+    margin-right: 10px;
+}
+
+.pin-icon-card {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card-btn .p-button-label {
+    font-size: 10px;
+}
+
+.meansures-card {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.meansures-card {
+    span {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        font-weight: bold;
+    }
+}
+

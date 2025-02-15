@@ -1,0 +1,34 @@
+<div class="cards-container">
+    <div *ngFor="let card of cards">
+        <p-card class="card-component" [style]="{ width: '20rem', height: '210px', marginLeft: '25px', border: '1px solid ' + card.borderColor }">
+            <div [style]="{ display: 'flex', justifyContent: 'space-between' }">
+                <div [style]="{ display: 'flex' }">
+                    <div class="workspace-icon">
+                        <i class="pi pi-credit-card"></i>
+                    </div>
+                    <div *ngIf="card.showThumbtack">
+                        <i class="pi pi-thumbtack pin-icon-card"></i>
+                    </div>
+                </div>
+                <div class="card-btn">
+                    <p-button severity="contrast" class="mr-2" label="Entrar" />
+                </div>
+            </div>
+            <div>
+                <section [style]="{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}">
+                    <h2 class="card-title">{{ card.title }}</h2>
+                    <div [style]="{display: 'flex'}">
+                        <div><i class="pi pi-pencil"></i></div>
+                        <div [style]="{marginLeft: '10px'}"><i class="pi pi-trash"></i></div>
+                    </div>
+                </section>
+                <p class="card-description">{{ card.description }}</p>
+                <section class="meansures-card">
+                    <div><i class="pi pi-mobile"></i><span>{{ card.stock.mobile }}</span></div>
+                    <div><i class="pi pi-microchip"></i><span>{{ card.stock.chip }}</span></div>
+                    <div><i class="pi pi-wifi"></i><span>{{ card.stock.wifi }}</span></div>
+                </section>
+            </div>
+        </p-card>
+    </div>
+</div>
