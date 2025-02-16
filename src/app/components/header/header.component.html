@@ -8,8 +8,10 @@
             <h2>{{ header.title }}</h2>
         </div>
         <div>
-            <p-button icon="pi pi-credit-card" class="mr-2 add-workspace-btn" label="Adicionar Workspace"/>
+            <p-button (click)="showAddWorkspaceModal()" icon="pi pi-credit-card" class="mr-2 add-workspace-btn" label="Adicionar Workspace"/>
         </div>
     </div>
     <hr>
 </div>
+
+<app-modal ngSkipHydration></app-modal>
